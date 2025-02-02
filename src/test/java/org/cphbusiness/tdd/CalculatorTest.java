@@ -35,6 +35,13 @@ class CalculatorTest {
     }
 
     @Test
+    void testAddWithArray() {
+        int expected = 6;
+        int actual = instance.add(new int[]{1,2,3});
+        assertEquals(expected, actual);
+    }
+
+    @Test
     void testSubtract() {
         int expected = 0;
         int actual = instance.subtract(-2,-2);

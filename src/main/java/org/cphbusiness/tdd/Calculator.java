@@ -16,6 +16,15 @@ public class Calculator {
         return sum;
     }
 
+    // Overload to take Array as input
+    public int add(int[] array) {
+        int sum = 0;
+        for (int i : array) {
+            sum = sum + i;
+        }
+        return sum;
+    }
+
     public int subtract(int a, int b) {
         return a - b;
     }
