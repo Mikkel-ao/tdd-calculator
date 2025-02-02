@@ -5,6 +5,17 @@ public class Calculator {
         return a + b;
     }
 
+    // Overload to take String as input
+    public int add(String s) {
+        int sum = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (Character.isDigit(s.charAt(i))) {
+                sum = sum + Character.getNumericValue(s.charAt(i));
+            }
+        }
+        return sum;
+    }
+
     public int subtract(int a, int b) {
         return a - b;
     }

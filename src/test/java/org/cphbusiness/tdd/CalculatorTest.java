@@ -28,6 +28,13 @@ class CalculatorTest {
     }
 
     @Test
+    void testAddWithString() {
+        int expected = 6;
+        int actual = instance.add("1,2,3");
+        assertEquals(expected, actual);
+    }
+
+    @Test
     void testSubtract() {
         int expected = 0;
         int actual = instance.subtract(-2,-2);
